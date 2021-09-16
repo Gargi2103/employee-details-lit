@@ -1,0 +1,161 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/demo-project.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "demo-project",
+          "declaration": {
+            "name": "DemoProject",
+            "module": "/src/DemoProject.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/DemoProject.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "DemoProject",
+          "members": [
+            {
+              "kind": "field",
+              "name": "title",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Hey there'",
+              "attribute": "title"
+            },
+            {
+              "kind": "field",
+              "name": "counter",
+              "type": {
+                "text": "number"
+              },
+              "default": "5",
+              "attribute": "counter"
+            },
+            {
+              "kind": "method",
+              "name": "__increment"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "title",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Hey there'",
+              "fieldName": "title"
+            },
+            {
+              "name": "counter",
+              "type": {
+                "text": "number"
+              },
+              "default": "5",
+              "fieldName": "counter"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "demo-project",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "DemoProject",
+          "declaration": {
+            "name": "DemoProject",
+            "module": "src/DemoProject.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/index.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "DemoProject",
+          "declaration": {
+            "name": "DemoProject",
+            "module": "./DemoProject.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/basic-setup.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "BasicSetup",
+          "members": [],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit-element"
+          },
+          "tagName": "basic-setup",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "basic-setup",
+          "declaration": {
+            "name": "BasicSetup",
+            "module": "src/components/basic-setup.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/left-nav.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "LeftNav",
+          "members": [],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit-element"
+          },
+          "tagName": "left-nav",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "left-nav",
+          "declaration": {
+            "name": "LeftNav",
+            "module": "src/components/left-nav.js"
+          }
+        }
+      ]
+    }
+  ]
+}

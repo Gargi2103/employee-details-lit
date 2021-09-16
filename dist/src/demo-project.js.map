@@ -1,0 +1,1 @@
+{"version":3,"file":"demo-project.js","sourceRoot":"","sources":["../../src/demo-project.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,WAAW,EAAE,MAAM,kBAAkB,CAAC;AAE/C,MAAM,CAAC,cAAc,CAAC,MAAM,CAAC,cAAc,EAAE,WAAW,CAAC,CAAC","sourcesContent":["import { DemoProject } from './DemoProject.js';\n\nwindow.customElements.define('demo-project', DemoProject);\n"]}

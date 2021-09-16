@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <style>
+    body {
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit';
+    import '../dist/src/demo-project.js';
+    import '../src/components/left-nav.js';
+    //import '../src/components/right-nav.js';
+    //import '../src/components/home-page.js';
+    // import '../src/components/info-page.js';
+
+    //<info-page></info-page>
+    //<home-page></home-page>
+    //<right-nav></right-nav>
+    const title = 'Hello owc World!';
+    render(
+      html`
+        <left-nav></left-nav>
+        
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>
+<!-- <demo-project .title=${title}>
+  some light-dom
+</demo-project> -->

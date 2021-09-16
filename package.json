@@ -1,0 +1,32 @@
+{
+  "name": "demo-project",
+  "description": "Webcomponent demo-project following open-wc recommendations",
+  "license": "MIT",
+  "author": "demo-project",
+  "version": "0.0.0",
+  "main": "dist/src/index.js",
+  "module": "dist/src/index.js",
+  "exports": {
+    ".": "./dist/src/index.js",
+    "./demo-project.js": "./dist/src/demo-project.js"
+  },
+  "scripts": {
+    "analyze": "cem analyze --litelement",
+    "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\"",
+    "build": "tsc && npm run analyze -- --exclude dist",
+    "prepublish": "tsc && npm run analyze -- --exclude dist"
+  },
+  "dependencies": {
+    "lit": "^2.0.0-rc.3",
+    "lit-element": "^2.5.1",
+    "lit-html": "^1.4.1"
+  },
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.4.17",
+    "@web/dev-server": "^0.1.22",
+    "concurrently": "^5.3.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.2"
+  },
+  "customElements": "custom-elements.json"
+}
